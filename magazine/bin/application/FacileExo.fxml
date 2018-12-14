@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="495.0" prefWidth="768.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FacileExo">
+   <children>
+      <Pane prefHeight="495.0" prefWidth="768.0" style="-fx-background-color: white;">
+         <children>
+            <ProgressBar fx:id="bar" layoutY="60.0" prefHeight="20.0" prefWidth="768.0" progress="0.35" />
+            <Button fx:id="exoInf" layoutX="236.0" layoutY="202.0" mnemonicParsing="false" onAction="#test" text="Participe et Infinitf" />
+            <Button layoutX="236.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Orthographe" />
+            <Button layoutX="236.0" layoutY="278.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Pluriels" />
+            <Button layoutX="236.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Conjugaisons" />
+            <Label layoutX="467.0" layoutY="207.0" text="13/20" />
+            <Label layoutX="467.0" layoutY="246.0" text="9/20" />
+            <Label layoutX="467.0" layoutY="283.0" text="18/20" />
+            <Label layoutX="467.0" layoutY="321.0" text="15/20" />
+            <Button fx:id="acueil" layoutX="710.0" layoutY="469.0" mnemonicParsing="false" onAction="#accueil" text="Acueil" />
+            <ImageView fx:id="image" fitHeight="25.0" fitWidth="62.0" layoutY="469.0" onMouseClicked="#btnImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image%20projet%20javafx%20IHM/flecheRetour.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="437.0" layoutY="154.0" prefHeight="25.0" prefWidth="95.0" text="Moyenne" />
+            <Pane prefHeight="60.0" prefWidth="768.0" style="-fx-background-color: #4b60a9;">
+               <children>
+                  <Label alignment="CENTER" layoutX="290.0" layoutY="17.0" prefHeight="26.0" prefWidth="188.0" text="Niveau: facile" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</AnchorPane>

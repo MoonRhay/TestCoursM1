@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="768.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PartieExercice">
+   <children>
+      <Button fx:id="bor3" layoutX="586.0" layoutY="224.0" mnemonicParsing="false" onAction="#bor3" prefHeight="32.0" prefWidth="84.0" text="boring">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="bor1" layoutX="274.0" layoutY="224.0" mnemonicParsing="false" onAction="#bor1" prefHeight="32.0" prefWidth="84.0" text="bored">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="bor2" layoutX="114.0" layoutY="224.0" mnemonicParsing="false" onAction="#bor2" prefHeight="32.0" prefWidth="84.0" text="bore">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="bor4" layoutX="434.0" layoutY="224.0" mnemonicParsing="false" onAction="#bor4" prefHeight="32.0" prefWidth="84.0" text="born">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label layoutX="334.0" layoutY="153.0" prefHeight="25.0" prefWidth="100.0" text="My job is so :">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="99.0" text="Complete the sentence with the good word." underline="true">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font></Label>
+      <Pane prefHeight="60.0" prefWidth="768.0" style="-fx-background-color: #4b60a9;">
+         <children>
+            <Label alignment="CENTER" layoutX="279.0" layoutY="17.0" text="Participe et Infinitif" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="btnImageR" fitHeight="34.0" fitWidth="60.0" layoutY="464.0" onMouseClicked="#btnImageR" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/flecheRetour.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="good" layoutX="334.0" layoutY="307.0" opacity="0.0" text="Good" textFill="#28d01f">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="bad" layoutX="342.0" layoutY="307.0" opacity="0.0" prefHeight="39.0" prefWidth="68.0" text="Bad" textFill="RED">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="suiv" layoutX="299.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnS" opacity="0.0" prefHeight="32.0" prefWidth="160.0" text="Suivant">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

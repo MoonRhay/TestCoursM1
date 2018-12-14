@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.grammaire">
+   <children>
+      <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="384.0" style="-fx-background-color: lightblue;" text="Grammaires">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="conjugaison" layoutX="384.0" mnemonicParsing="false" onAction="#Conjugaisons" onMouseEntered="#P2conj" onMouseExited="#P3conj" prefHeight="60.0" prefWidth="384.0" style="-fx-background-color: #4b60a9;" text="Conjugaisons" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="90.0" layoutY="136.0" text="Adjectifs et adverbes">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="147.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="un" layoutX="113.0" layoutY="167.0" onMouseEntered="#entre" onMouseExited="#sorti" text="Les fonctions des adjectives et adverbes" underline="true" />
+      <Label layoutX="96.0" layoutY="182.0" prefHeight="33.0" prefWidth="4.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="deux" layoutX="113.0" layoutY="202.0" onMouseEntered="#entre2" onMouseExited="#sorti2" text="La comparaison" underline="true" />
+      <Label layoutX="96.0" layoutY="217.0" prefHeight="33.0" prefWidth="4.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="trois" layoutX="112.0" layoutY="237.0" onMouseEntered="#entre3" onMouseExited="#sorti3" text="Les superlatives" underline="true" />
+      <Label fx:id="quatre" layoutX="505.0" layoutY="163.0" onMouseEntered="#entre4" onMouseExited="#sorti4" text="règles générales et exceptions" underline="true" />
+      <Label layoutX="488.0" layoutY="143.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="482.0" layoutY="132.0" text="Pluriel des noms:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="339.0" text="L’articles :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="350.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="cinq" layoutX="119.0" layoutY="370.0" onMouseEntered="#entre5" onMouseExited="#sorti5" text=" défini (« The ») ; indéfini (« a », « an »)" underline="true" />
+      <Button fx:id="accueil" layoutX="706.0" layoutY="469.0" mnemonicParsing="false" onAction="#acc" text="Accueil" />
+   </children>
+</Pane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="768.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Accueil">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/fond.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="9.0" layoutY="9.0" prefHeight="61.0" prefWidth="750.0" style="-fx-background-color: #4b60a9;">
+         <children>
+            <Label alignment="CENTER" layoutX="303.0" layoutY="-3.0" text="Accueil" textFill="WHITE">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="deco" fitHeight="42.0" fitWidth="51.0" layoutX="685.0" layoutY="16.0" onMouseClicked="#Deco" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../home/42/rbleu/Bureau/stockage/eclipse/image%20projet%20javafx%20IHM/deco.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="mag" layoutX="543.0" layoutY="337.0" mnemonicParsing="false" onAction="#Magazine" prefHeight="42.0" prefWidth="133.0" text="Magazines">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="outils" layoutX="318.0" layoutY="337.0" mnemonicParsing="false" onAction="#Outils" prefHeight="42.0" prefWidth="133.0" text="Outils">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="exercice" alignment="CENTER" layoutX="91.0" layoutY="337.0" mnemonicParsing="false" onAction="#Exercice" prefHeight="32.0" prefWidth="133.0" text="Exercice" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="93.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/exercice.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="310.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/outils.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="535.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/magazine.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Magazine">
+   <top>
+      <AnchorPane style="-fx-background-color: BLACK; -fx-border-size: 30;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="495.0" fitWidth="768.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image%20projet%20javafx%20IHM/fond.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hist" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="273.0" onMouseClicked="#btnImageHistoire" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image%20projet%20javafx%20IHM/flecheHistoire.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="geo" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="210.0" onMouseClicked="#btnImageGeographie" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image%20projet%20javafx%20IHM/flecheGeo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cult" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="335.0" onMouseClicked="#btnImageCulture" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image%20projet%20javafx%20IHM/flecheCulture.png" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="gridGeo" alignment="CENTER" layoutX="239.0" layoutY="90.0" prefHeight="370.0" prefWidth="478.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="232.0" prefWidth="238.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="144.0" prefWidth="240.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="259.0" minHeight="158.0" prefHeight="183.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="212.0" minHeight="111.0" prefHeight="187.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="img1" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/geo/attraction.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="img2" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/geo/bigBen.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img3" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/geo/bridge.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img4" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/geo/residence.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="gridHist" alignment="CENTER" layoutX="239.0" layoutY="90.0" prefHeight="370.0" prefWidth="478.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="232.0" prefWidth="238.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="144.0" prefWidth="240.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="259.0" minHeight="158.0" prefHeight="183.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="212.0" minHeight="111.0" prefHeight="187.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="img11" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/hist/guerre.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img21" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/hist/prince.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img31" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/hist/reine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img41" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/hist/soldat.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="gridCult" alignment="CENTER" layoutX="239.0" layoutY="90.0" prefHeight="370.0" prefWidth="478.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="232.0" prefWidth="238.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="144.0" prefWidth="240.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="259.0" minHeight="158.0" prefHeight="183.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="212.0" minHeight="111.0" prefHeight="187.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="img12" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/cult/eglise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img22" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/cult/foot.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img32" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/cult/musee.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img42" fitHeight="173.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../image%20projet%20javafx%20IHM/cult/musique.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Button fx:id="btnexo" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#Exercice2" onMouseEntered="#P2Exercice" onMouseExited="#P3Exercice" prefHeight="60.0" prefWidth="248.0" style="-fx-background-color: #4b60a9;" text="Exercice" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnoutil" layoutX="254.0" layoutY="6.0" mnemonicParsing="false" onAction="#Outils2" onMouseEntered="#P2Outil" onMouseExited="#P3Exercice" prefHeight="60.0" prefWidth="248.0" style="-fx-background-color: #4b60a9;" text="Outils" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="500.0" layoutY="6.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="257.0" style="-fx-background-color: lightblue;" text="Magazines">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="deco2" fitHeight="40.0" fitWidth="47.0" layoutX="701.0" layoutY="23.0" onMouseClicked="#deco3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image%20projet%20javafx%20IHM/deco2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

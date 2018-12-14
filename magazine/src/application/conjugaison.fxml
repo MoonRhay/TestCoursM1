@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.conjugaison">
+   <children>
+      <Button fx:id="gram" mnemonicParsing="false" onAction="#Grammaires" onMouseEntered="#P2gram" onMouseExited="#P3gram" prefHeight="60.0" prefWidth="384.0" style="-fx-background-color: #4b60a9;" text="Grammaires" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="384.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="384.0" style="-fx-background-color: lightblue;" text="Conjugaisons">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Label fx:id="trois" layoutX="64.0" layoutY="247.0" onMouseEntered="#entre3" onMouseExited="#sorti3" text="Le présent continu " underline="true" />
+      <Label layoutX="48.0" layoutY="227.0" prefHeight="33.0" prefWidth="4.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="deux" layoutX="65.0" layoutY="212.0" onMouseEntered="#entre2" onMouseExited="#sorti2" text="Les temps passés " underline="true" />
+      <Label layoutX="48.0" layoutY="192.0" prefHeight="33.0" prefWidth="4.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="un" layoutX="65.0" layoutY="177.0" onMouseEntered="#entre" onMouseExited="#sorti" text="Présent" underline="true" />
+      <Label layoutX="48.0" layoutY="157.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="146.0" text="Les temps verbaux">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="262.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="quatre" layoutX="65.0" layoutY="282.0" onMouseEntered="#entre4" onMouseExited="#sorti4" text="Le passé continu " underline="true" />
+      <Label layoutX="48.0" layoutY="297.0" prefHeight="33.0" prefWidth="4.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="cinq" layoutX="65.0" layoutY="317.0" onMouseEntered="#entre5" onMouseExited="#sorti5" text="Le passé indéfini et le passé indéfini progressif" underline="true" />
+      <Label layoutX="48.0" layoutY="336.0" prefHeight="33.0" prefWidth="4.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="six" layoutX="64.0" layoutY="356.0" onMouseEntered="#entre6" onMouseExited="#sorti6" text="Le future" underline="true" />
+      <Label layoutX="384.0" layoutY="142.0" text="Verbes auxiliaires (Verbes modaux) :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="154.0" text=".">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="sept" layoutX="414.0" layoutY="174.0" onMouseEntered="#entre7" onMouseExited="#sorti7" text="can, will, should, must...." underline="true" />
+      <Button fx:id="accueil" layoutX="708.0" layoutY="469.0" mnemonicParsing="false" onAction="#acc" text="Accueil" />
+   </children>
+</Pane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="768.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.exercice">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="778.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/fond.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="577.0" layoutY="324.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="126.0" text="Difficle" />
+      <Button layoutX="321.0" layoutY="324.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="126.0" text="Normal" />
+      <Button fx:id="facile" layoutX="65.0" layoutY="324.0" mnemonicParsing="false" onAction="#ExoFacile" prefHeight="33.0" prefWidth="126.0" text="Facile" />
+      <Button layoutX="9.0" layoutY="5.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="248.0" style="-fx-background-color: lightblue;" text="Exercice">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btoutil" layoutX="256.0" layoutY="5.0" mnemonicParsing="false" onAction="#Outils" onMouseEntered="#P2Exercice" onMouseExited="#P3Exercice" prefHeight="60.0" prefWidth="248.0" style="-fx-background-color: #4b60a9;" text="Outils" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnmagazine" layoutX="502.0" layoutY="5.0" mnemonicParsing="false" onAction="#Magazines" onMouseEntered="#P2Magazine" onMouseExited="#P3Exercice" prefHeight="60.0" prefWidth="257.0" style="-fx-background-color: #4b60a9;" text="Magazines" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="163.0" layoutX="47.0" layoutY="112.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/2livre.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="309.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/3livre.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="578.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/4livre.png" />
+         </image></ImageView>
+      <ImageView fx:id="deco" fitHeight="41.0" fitWidth="47.0" layoutX="701.0" layoutY="23.0" onMouseClicked="#deco2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image%20projet%20javafx%20IHM/deco.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

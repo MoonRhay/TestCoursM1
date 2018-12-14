@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.exo2">
+   <children>
+      <Label layoutX="366.0" layoutY="134.0" text="Bravo!!">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="176.0" text="Vous avez fini la session!">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="ok" layoutX="376.0" layoutY="335.0" mnemonicParsing="false" onAction="#ok" text="OK" />
+   </children>
+</AnchorPane>
